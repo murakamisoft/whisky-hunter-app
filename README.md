@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# ウイスキーオークション情報アプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+このアプリは、ウイスキーのオークション情報を表示するReactアプリケーションです。オークションのデータをAPIから取得し、金額を円に変換して表示します。また、Bootstrapを使用してスタイリッシュなユーザーインターフェイスを実現しています。
 
-## Available Scripts
+## 特徴
 
-In the project directory, you can run:
+- ウイスキーのオークション情報を取得
+- 最大入札額、最小入札額、平均入札額、取引量などの詳細を表示
+- 入札金額を日本円で表示（カンマ区切り）
+- 日付と金額でフィルタリング機能を追加可能
+- Bootstrapを使用したレスポンシブデザイン
 
-### `npm start`
+## 使用技術
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: UI構築のためのJavaScriptライブラリ
+- **Bootstrap**: スタイリングとレスポンシブデザインのためのCSSフレームワーク
+- **Fetch API**: オークションデータを取得するためのAPIリクエスト
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## インストール手順
 
-### `npm test`
+1. リポジトリをクローンします。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/whisky-hunter-app.git
+   ```
+1. プロジェクトディレクトリに移動します。
+    ```
+    cd whisky-hunter-app
+    ```
+1. 必要な依存関係をインストールします。
+    ```
+    npm install
+    ```
+1. 開発サーバーを起動します。
+    ```
+    npm start
+    ```
+ブラウザで http://localhost:3000 にアクセスすると、アプリが表示されます。
 
-### `npm run build`
+## API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+このアプリは、ウイスキーオークションのデータを提供するAPIを使用しています。APIから取得するデータには、以下の情報が含まれています：
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- オークション名
+- 日付
+- 最大入札額
+- 最小入札額
+- 平均入札額
+- 取引量
+- ロット数
+- 全オークションロット数
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 使い方
 
-### `npm run eject`
+「オークションを検索」ボタンをクリックすると、最新のウイスキーオークション情報が表示されます。  
+表示されたデータは、ウイスキーオークションの詳細情報を含んでいます。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 免責事項
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+このアプリは、情報提供を目的としています。正確性や完全性を保証するものではありません。利用する際は自己責任でお願いいたします。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ライセンス
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+このプロジェクトはMITライセンスのもとで公開されています。
